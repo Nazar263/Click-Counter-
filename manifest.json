@@ -1,0 +1,15 @@
+{
+  "name": "Click_Counter",
+  "short_name": "Click_Counter",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#C8C8C8",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "IMG/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

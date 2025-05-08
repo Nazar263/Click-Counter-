@@ -11,16 +11,26 @@
   
 
   <!-- Custom Styles -->
+      <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <input type="text" id="input_text1" class="input_text1" value="0">
+  <input type="text" id="input_text1" class="input_text1" value="0" >
   <!-- Project -->
   <button id="button_plus" class="button_plus_minus" onclick="plus()">+</button>
    <button id="button_minus" class="button_plus_minus" onclick="minus()">-</button>
   <button id="button_clean" class="button_clean" onclick="clean()"
   >CLEAN</button>
+  
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./service-worker.js');
+  }
+</script>
+  
   <script src="main.js"></script>
 </body>
 </html>
